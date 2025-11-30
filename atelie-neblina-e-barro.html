@@ -3,133 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Case — Ateliê Neblina &amp; Barro | Portfólio Rodrigo Cezar</title>
+  
   <meta name="description" content="Case completo do website Ateliê Neblina & Barro — landing page autoral de cerâmica contemporânea, inspirada em Cunha/SP.">
+  <meta property="og:title" content="Case — Ateliê Neblina & Barro">
+  <meta property="og:description" content="Website autoral inspirado na cerâmica contemporânea produzida nas montanhas de Cunha/SP.">
+  <meta property="og:image" content="assets/img/case-hero-21x9.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rdgcz.github.io/portfolio/atelie-neblina-e-barro.html">
+
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon/favicon.ico">
 </head>
 
 <body class="case-page">
 
-  <!-- HEADER SIMPLES -->
   <header class="case__header">
-    <a href="index.html" class="case__back" aria-label="Voltar para a página inicial do portfólio">← Voltar ao portfólio</a>
+    <div class="container">
+      <a href="index.html"
+         class="case__back"
+         aria-label="Voltar para a página inicial do portfólio">
+        ← Voltar ao portfólio
+      </a>
+    </div>
   </header>
 
   <main>
 
   <!-- HERO DO CASE -->
-  <section class="case__hero">
-    <div class="case__hero-overlay"></div>
+    <section class="case__hero"
+             aria-labelledby="case-titulo"
+             aria-describedby="case-subtitulo">
+      <!-- Imagem principal do case -->
 
-    <div class="case__hero-content">
 
-      <h1 class="case__title">Case – Ateliê Neblina &amp; Barro</h1>
-      <p class="case__subtitle">
-        Website autoral inspirado na cerâmica contemporânea produzida nas montanhas de Cunha/SP.
-      </p>
-     
+      <div class="case__hero-overlay"></div>
 
-    </div>
-  </section>
+      <div class="container case__hero-content">
+        <p class="case__hero-kicker">Case</p>
 
-  <!-- SOBRE O PROJETO -->
-  <section class="case__section">
-    <h2>Contexto</h2>
-    <p>
-      O Ateliê Neblina &amp; Barro é um projeto fictício desenvolvido para portfólio, mas baseado na atmosfera
-      real da cidade de Cunha/SP — um dos polos mais importantes de cerâmica artística no Brasil. O objetivo do site
-      era criar uma experiência sensorial que traduzisse o clima de neblina constante, o silêncio de ateliê e a estética
-      orgânica das peças artesanais.
-    </p>
-  </section>
+        <h1 id="case-titulo" class="case__title">
+          Ateliê Neblina &amp; Barro
+        </h1>
 
-  <!-- OBJETIVOS -->
-  <section class="case__section">
-    <h2>Objetivos do Projeto</h2>
-    <ul class="case__list">
-      <li>Criar uma identidade visual minimalista, natural e orgânica.</li>
-      <li>Desenvolver uma landing page completa com estilo editorial.</li>
-      <li>Destacar o processo artesanal em três etapas ilustradas.</li>
-      <li>Construir uma galeria visual equilibrada e agradável.</li>
-      <li>Implementar SEO, acessibilidade e performance.</li>
-      <li>Produzir um site totalmente responsivo e leve.</li>
-    </ul>
-  </section>
+        <p id="case-subtitulo" class="case__subtitle">
+          Website autoral inspirado na cerâmica contemporânea produzida nas
+          montanhas de Cunha/SP.
+        </p>
 
-  <!-- VISUAL -->
-  <section class="case__section">
-    <h2>Direção de Arte</h2>
-    <p>
-      A estética combina tons de barro, névoa e madeira, evocando uma sensação de calma silenciosa. O layout utiliza
-      tipografia serifada para títulos, transmitindo caráter artesanal, e tipografia sem serifa para textos, garantindo
-      legibilidade e leveza.
-    </p>
+        <a
+          href="https://rdgcz.github.io/atelie-neblina-e-barro/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary case__hero-cta"
+          aria-label="Abrir o site Ateliê Neblina &amp; Barro em nova aba">
+          Acessar o site publicado →
+        </a>
+      </div>
+    </section>
+  <!-- CONTEXTO -->
+    <section class="case__section" aria-labelledby="sec-contexto">
+      <div class="container">
+        <h2 id="sec-contexto" class="case__section-title">Contexto</h2>
+        <p>
+          O Ateliê Neblina &amp; Barro é um projeto fictício desenvolvido para
+          portfólio, mas baseado na atmosfera real da cidade de Cunha/SP —
+          um dos polos mais importantes de cerâmica artística no Brasil.
+          O objetivo do site foi traduzir a sensação de neblina constante,
+          silêncio de ateliê e estética orgânica das peças em uma experiência
+          digital minimalista, elegante e sensorial.
+        </p>
+      </div>
+    </section>
 
-    <div class="case__img-grid">
-      <img src="assets/img/mockups/mockup-macbook.webp" alt="" aria-label="">
-      <img src="assets/img/mockups/mockup-iphone.webp" alt="" aria-label="">
-    </div>
-  </section>
+    <!-- OBJETIVOS -->
+    <section class="case__section" aria-labelledby="sec-objetivos">
+      <div class="container">
+        <h2 id="sec-objetivos" class="case__section-title">
+          Objetivos do Projeto
+        </h2>
 
-  <!-- PROCESSO DE DESENVOLVIMENTO -->
-  <section class="case__section">
-    <h2>Processo de Desenvolvimento</h2>
-    <p>
-      O projeto foi construído em HTML5, CSS3 e JavaScript puro, com foco em boa estrutura semântica. As animações
-      sutis foram criadas com IntersectionObserver, reforçando a sensação de suavidade. As imagens foram tratadas e
-      otimizadas em WebP para performance no GitHub Pages.
-    </p>
+        <ul class="case__list">
+          <li>Criar uma identidade visual natural, orgânica e atemporal.</li>
+          <li>Desenvolver uma landing page completa, com foco editorial.</li>
+          <li>Destacar o processo artesanal em três etapas bem definidas.</li>
+          <li>Construir uma galeria visual equilibrada e agradável.</li>
+          <li>
+            Implementar boas práticas de SEO, acessibilidade e performance.
+          </li>
+          <li>
+            Garantir responsividade real em desktop, tablet e mobile.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <ul class="case__list">
-      <li>Grid CSS para composição equilibrada.</li>
-      <li>Animações independentes para movimento progressivo.</li>
-      <li>Lazy loading estratégico nas imagens da galeria.</li>
-      <li>Controle manual de responsividade para cada breakpoint.</li>
-      <li>Implementação de favicons, OG-image e manifest.</li>
-      <li>Ajustes de acessibilidade: ALT, ARIA e leitura semântica.</li>
-    </ul>
-  </section>
+    <!-- DIREÇÃO DE ARTE -->
+    <section class="case__section" aria-labelledby="sec-direcao">
+      <div class="container">
+        <h2 id="sec-direcao" class="case__section-title">
+          Direção de Arte
+        </h2>
 
-  <!-- GALERIA -->
-  <section class="case__section">
-    <h2>Galeria de Imagens</h2>
-    <p>
-      Todas as imagens do projeto foram geradas com estilo fotográfico consistente: luz suave, paleta terrosa,
-      estética artesanal e composição minimalista.
-    </p>
+        <p>
+          A direção visual foi construída a partir da combinação entre tons de
+          barro, névoa e madeira, com foco em luz suave e textura fosca.
+          Para os títulos, foi utilizada uma tipografia serifada de caráter
+          artesanal; para os textos, uma fonte sem serifa limpa, garantindo
+          legibilidade e equilíbrio.
+        </p>
 
-    <div class="case__img-grid">
-      <img src="assets/img/galeria/peca-01.webp" alt="" aria-label="">
-      <img src="assets/img/galeria/peca-02.webp" alt="" aria-label="">
-      <img src="assets/img/galeria/peca-03.webp" alt="" aria-label="">
-      <img src="assets/img/galeria/peca-04.webp" alt="" aria-label="">
-      <img src="assets/img/galeria/peca-05.webp" alt="" aria-label="">
-      <img src="assets/img/galeria/peca-06.webp" alt="" aria-label="">
+        <p>
+          A composição fotográfica segue uma estética fine-art: fundos neutros,
+          poucos elementos em cena e enquadramentos que valorizam o silêncio.
+        </p>
 
-    </div>
-  </section>
+        <div class="case__img-grid case__img-grid--wide" aria-label="Mockups do projeto em diferentes dispositivos">
+          <figure class="case__figure">
+            <img
+              src="assets/img/cases/atelie-neblina/mockups/mockup-macbook.webp"
+              alt="Mockup do site do Ateliê Neblina &amp; Barro em um MacBook aberto."
+              loading="lazy"
+            />
+            <figcaption>Visual do site em desktop (MacBook).</figcaption>
+          </figure>
 
-  <!-- CONCLUSÃO -->
-  <section class="case__section">
-    <h2>Resultado Final</h2>
-    <p>
-      O site final demonstra domínio de layout, design responsivo, narrativa visual, acessibilidade e refinamento
-      UI. Ele serve como peça central do meu portfólio, representando minha capacidade de criar websites elegantes,
-      coerentes e tecnicamente sólidos.
-    </p>
+          <figure class="case__figure">
+            <img
+              src="assets/img/cases/atelie-neblina/mockups/mockup-iphone.webp"
+              alt="Mockup do site do Ateliê Neblina &amp; Barro em um iPhone."
+              loading="lazy"
+            />
+            <figcaption>Experiência mobile, com hero adaptado ao iPhone.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-    <a href="https://rdgcz.github.io/atelie-neblina-e-barro/" target="_blank" class="btn btn--primary big" aria-label="">
-      Ver site publicado →
-    </a>
-  </section>
+    <!-- PROCESSO DE DESENVOLVIMENTO -->
+    <section class="case__section" aria-labelledby="sec-processo">
+      <div class="container">
+        <h2 id="sec-processo" class="case__section-title">
+          Processo de Desenvolvimento
+        </h2>
+
+        <p>
+          O projeto foi desenvolvido em HTML5, CSS3 e JavaScript puro
+          (vanilla), com foco em código limpo e semântico. A estrutura da
+          página foi organizada em seções bem definidas, com grid e flexbox
+          para compor os layouts e garantir boa leitura em diferentes tamanhos
+          de tela.
+        </p>
+
+        <ul class="case__list">
+          <li>HTML5 semântico estruturado em seções de conteúdo.</li>
+          <li>
+            CSS3 com grid, flexbox e variáveis para manter consistência visual.
+          </li>
+          <li>
+            Animações on-scroll utilizando <code>IntersectionObserver</code>,
+            mantendo leveza e fluidez.
+          </li>
+          <li>
+            Imagens otimizadas em formato WebP, hospedadas via GitHub Pages.
+          </li>
+          <li>
+            Implementação de favicons, manifest e OG-image para compartilhamento.
+          </li>
+          <li>
+            Ajustes de acessibilidade: textos alternativos, hierarquia de títulos
+            e aria-labels em elementos interativos.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERIA / DETALHES VISUAIS -->
+    <section class="case__section" aria-labelledby="sec-galeria">
+      <div class="container">
+        <h2 id="sec-galeria" class="case__section-title">
+          Detalhes Visuais do Projeto
+        </h2>
+
+        <p>
+          A galeria do site foi planejada para reforçar a narrativa visual:
+          peças únicas, iluminação suave e composições assimétricas passam a
+          sensação de peças reais fotografadas em um ateliê de Cunha.
+        </p>
+
+        <div class="case__img-grid" aria-label="Detalhes do design do site">
+          <img
+            src="assets/img/cases/atelie-neblina/galeria/peca-01.webp"
+            alt="Peça de cerâmica em composição minimalista."
+            loading="lazy"
+          />
+          <img
+            src="assets/img/cases/atelie-neblina/galeria/peca-02.webp"
+            alt="Peça de cerâmica em composição minimalista."
+            loading="lazy"
+          />
+          <img
+            src="assets/img/cases/atelie-neblina/galeria/peca-03.webp"
+            alt="Peça de cerâmica em composição minimalista."
+            loading="lazy"
+          />
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADO FINAL -->
+    <section class="case__section" aria-labelledby="sec-resultado">
+      <div class="container">
+        <h2 id="sec-resultado" class="case__section-title">
+          Resultado Final
+        </h2>
+
+        <p>
+          O resultado é um website que combina identidade visual forte,
+          narrativa sensorial e execução técnica consistente. O projeto
+          demonstra domínio de layout, responsividade, tipografia e atenção
+          aos detalhes — desde animações discretas até o tratamento das
+          imagens e microtextos.
+        </p>
+
+        <p>
+          Este case representa minha capacidade de criar experiências digitais
+          elegantes para negócios artesanais, traduzindo valores intangíveis
+          — como tempo, silêncio e processo — em interface e conteúdo.
+        </p>
+
+        <a
+          href="https://rdgcz.github.io/atelie-neblina-e-barro/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary case__cta-final"
+          aria-label="Abrir novamente o site Ateliê Neblina &amp; Barro em nova aba">
+          Acessar o site publicado →
+        </a>
+      </div>
+    </section>
 </main>
-  <!-- FOOTER DO CASE -->
   <footer class="case__footer">
-    <p>Rodrigo Cezar • Desenvolvimento Front-End • 2025</p>
+    <div class="container">
+      <p>Rodrigo Cezar • Desenvolvimento Front-End • 2025</p>
+    </div>
   </footer>
-
 </body>
 </html>
