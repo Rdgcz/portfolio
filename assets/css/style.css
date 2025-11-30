@@ -207,17 +207,36 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 3rem 1rem;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 6rem 5%;
   color: #fff;
   background: url('../img/cases/atelie-neblina/hero/case-hero-21x9.webp') center/cover no-repeat;
   border-radius: 8px;
-  
+  overflow: hidden;
 }
 
+.case__hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.55) 30%,
+      rgba(0, 0, 0, 0.15) 70%,
+      rgba(0, 0, 0, 0.05) 100%
+  );
+  backdrop-filter: blur(1px);
+  z-index: 0;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  inset: 12px;
+}
 
-
+/*
 .case__hero-overlay {
   position: absolute;
   inset: 0;
@@ -235,11 +254,12 @@ footer {
   mix-blend-mode: soft-light;
   pointer-events: none;
   opacity: 0.4;
-}
+} */
 
 .case__hero-content {
   position: relative;
-  max-width: 700px;
+  max-width: 620px;
+  z-index: 1;
 }
 
 .case__hero-kicker {
@@ -250,7 +270,52 @@ footer {
   letter-spacing: 1.2px;
 }
 
-/* TITULOS */
+.case__hero h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.case__hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.92;
+}
+
+/* Responsividade inteligente */
+@media (max-width: 768px) {
+  .case__hero {
+    min-height: 55vh;
+    padding: 4rem 1.6rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .case__hero-content {
+    max-width: 100%;
+  }
+
+  .case__hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .case__hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .case__hero::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.15)
+    );
+  }
+}
+
+/* TITULOS
 .case__title {
   font-family: var(--fonte-titulo);
   font-size: 2.4rem;
@@ -265,7 +330,9 @@ footer {
   margin-bottom: 2rem;
   color: #f4f0eb;
   font-weight: 400  ;
-}
+} */
+
+
 
 /* SECTION */
 .case__section {
