@@ -37,24 +37,95 @@ body {
 /* -----------------------------------------------------
    HEADER / HERO (INDEX)
 ------------------------------------------------------ */
-header {
-    padding: 70px 20px;
-    text-align: center;
-    max-width: var(--max-width);
-    margin: auto;
+
+.portfolio-hero {
+  position: relative;
+  width: 100%;
+  padding: 8rem 0 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background: #0f0f0f;
+  color: #fff;
+  overflow: hidden;
 }
 
-header h1 {
+/* Vinheta editorial sutil e premium */
+.portfolio-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at center,
+      rgba(255,255,255,0.05) 0%,
+      rgba(0,0,0,0.85) 100%
+  );
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Conteúdo */
+.portfolio-hero__content {
+  position: relative;
+  max-width: 850px;
+  width: 90%;
+  z-index: 2;
+}
+
+/* Títulos premium */
+.portfolio-hero__title {
+  font-family: var(--fonte-titulo);
+  font-size: 3.4rem;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 1.4rem;
+}
+
+/* Subtítulo */
+.portfolio-hero__subtitle {
+  font-size: 1.3rem;
+  line-height: 1.65;
+  opacity: .9;
+  max-width: 650px;
+  margin-bottom: 2.6rem;
+}
+
+/* CTA */
+.portfolio-hero__cta {
+  display: inline-block;
+  padding: .9rem 2.2rem;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #0f0f0f;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: .2px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.portfolio-hero__cta:hover {
+  transform: translateY(-2px);
+  opacity: .85;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .portfolio-hero {
+    padding: 6rem 0 5rem;
+    text-align: left;
+  }
+
+  .portfolio-hero__title {
     font-size: 2.4rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .portfolio-hero__subtitle {
+    font-size: 1.1rem;
+  }
 }
 
-header p {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    margin-bottom: 20px;
-}
 
 /* -----------------------------------------------------
    BUTTONS
