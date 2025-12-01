@@ -273,17 +273,21 @@ footer {
 }
 
 .case__hero h1 {
+  font-family: var(--fonte-titulo);
   font-size: 3rem;
-  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
   margin-bottom: 1rem;
 }
 
 .case__hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.28rem;
   font-weight: 300;
-  line-height: 1.6;
+  letter-spacing: .2px;
+  line-height: 1.55;
   margin-bottom: 2rem;
-  opacity: 0.7;
+  opacity: 0.92;
   color: #f4f0eb;
 }
 
@@ -353,17 +357,20 @@ footer {
 
 .case__section h2 {
   font-family: var(--fonte-titulo);
-  font-size: 2.2rem;
-  margin-bottom: 1.4rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
   color: var(--cor-barro-escuro);
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
 }
 
 .case__section p {
-  line-height: 1.75;
-  font-size: 1.05rem;
-  color: #3b3b3b;
-  margin-bottom: 1.8rem;
+  line-height: 1.78;
+  font-size: 1.12rem;
+  letter-spacing: 0.1px;
+  color: #353535;
+  margin-bottom: 2rem;
 }
 
 
@@ -374,9 +381,11 @@ footer {
 
 .case__list li {
   margin-bottom: 0.7rem;
+  font-size: 1.08rem;
   padding-left: 1.2rem;
   line-height: 1.6;
   position: relative;
+  color: #3b3b3b;
 }
 
 .case__list li::before {
