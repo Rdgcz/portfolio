@@ -130,30 +130,26 @@ body {
   position: absolute;
   inset: 20px;
   background:
-    radial-gradient(circle at 70% 40%, rgba(255,255,255,0.10), rgba(0,0,0,0.85)),
+    radial-gradient(circle at 70% 40%, rgba(248, 246, 246, 0.1), rgba(0,0,0,0.85)),
     linear-gradient(120deg, rgba(255,255,255,0.05), rgba(0,0,0,0.7));
   border: #fff 2px solid;
   border-radius: 10px;
   backdrop-filter: blur(8px);
   pointer-events: none;
   mix-blend-mode: soft-light;
+  z-index: -1;
 }
 
 .agency-hero__container {
   max-width: 1180px;
-  height: 60vh;
   margin: 0 auto;
   padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-    align-items: center;
-    text-align: center;
-  justify-content: space-between;
-  gap: 1rem;
-  position: relative;
-  z-index: 2;
-
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
 }
+
 
 /* Texto */
 .agency-hero__title {
@@ -170,7 +166,6 @@ body {
   align-items: left;
   text-align: center;
   margin: 1rem auto;
-
   line-height: 1.65;
   max-width: 800px;
   color: #ddd;
@@ -189,6 +184,8 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: transform .25s ease, opacity .25s ease;
+
+
 }
 
 .agency-hero__cta:hover {
@@ -196,12 +193,19 @@ body {
   opacity: .85;
 }
 
+.whatsapp-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
 /* Bloco visual premium */
 .agency-hero__visual {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .agency-hero__shape {
@@ -212,6 +216,8 @@ body {
   filter: blur(55px);
   opacity: 0.7;
   pointer-events: none;
+
+
 }
 
 /* RESPONSIVO */
