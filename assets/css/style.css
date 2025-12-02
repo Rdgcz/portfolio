@@ -118,10 +118,10 @@ body {
   position: relative;
   width: 100%;
   padding: clamp(5rem, 10vw, 8rem) 0;
-  background: #0e0e0e;
+  background: url('../img/hero-bg.webp') center/cover no-repeat;
   color: #fff;
   overflow: hidden;
-    border-bottom: #555 6px solid;
+  border-bottom: #555 6px solid;
 }
 
 .agency-hero::after {
@@ -129,9 +129,7 @@ body {
   content: "";
   position: absolute;
   inset: 20px;
-  background:
-    radial-gradient(circle at 70% 40%, rgba(248, 246, 246, 0.1), rgba(0,0,0,0.85)),
-    linear-gradient(120deg, rgba(255,255,255,0.05), rgba(0,0,0,0.7));
+  
   border: #fff 2px solid;
   border-radius: 10px;
   backdrop-filter: blur(8px);
@@ -148,6 +146,11 @@ body {
   grid-template-columns: 1fr 0.9fr;
   gap: 3rem;
   align-items: center;
+  text-align: left;
+}
+
+.agency-hero__content {
+  text-align: left;
 }
 
 
@@ -179,7 +182,7 @@ body {
   padding: 0.85rem 1.8rem;
   margin: 2rem 0;
   background: #76f18b;
-  color: #111;
+  color: #222;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -194,8 +197,10 @@ body {
 }
 
 .whatsapp-icon {
-    margin-right: 10px;
+    margin: 10px;
     vertical-align: middle;
+    color: #222;
+    transform: scale(1.5);
 }
 
 
