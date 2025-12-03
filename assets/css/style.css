@@ -2,7 +2,8 @@
    BASE
 ------------------------------------------------------ */
 :root {
-    --font: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-title: 'Plus Jakarta Sans', sans-serif;
     --bg: #f7f7f7;
     --text: #222;
     --text-light: #555;
@@ -117,7 +118,7 @@ body {
 .agency-hero {
   position: relative;
   width: 100%;
-  padding: clamp(5rem, 10vw, 8rem) 0;
+  padding: clamp(3rem, 8vw, 5rem) 0;
   background: url('../img/hero-bg.webp') center/cover no-repeat;
   color: #fff;
   overflow: hidden;
@@ -132,21 +133,23 @@ body {
   
   border: #fff 2px solid;
   border-radius: 10px;
-  backdrop-filter: blur(8px);
+ 
   pointer-events: none;
   mix-blend-mode: soft-light;
-  z-index: -1;
+  z-index: 0;
 }
 
 .agency-hero__container {
+    position: relative;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   display: grid;
   grid-template-columns: 1fr 0.9fr;
   gap: 3rem;
   align-items: center;
   text-align: left;
+  z-index: 1;
 }
 
 .agency-hero__content {
@@ -156,32 +159,42 @@ body {
 
 /* Texto */
 .agency-hero__title {
+  font-family: var(--font-title);
   font-size: clamp(2.6rem, 4vw, 3.8rem);
-  text-align: center;
+  color: #1a1a1a;
+  text-align: left;
+  margin-left: 0;
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -1px;
+  line-height: 1.1;
+  letter-spacing: -0.7px;
   margin-bottom: 1.5rem;
 }
 
 .agency-hero__subtitle {
-  font-size: clamp(1.1rem, 1.4vw, 1.25rem);
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  font-size: clamp(1.1rem, 1.3vw, 1.25rem);
   align-items: left;
-  text-align: center;
-  margin: 1rem auto;
-  line-height: 1.65;
-  max-width: 800px;
-  color: #ddd;
+  text-align: left;
+  margin: 1rem auto 2.5rem 0;
+  line-height: 1.6;
+  max-width: 700px;
+  color: #2a2a2a;
   opacity: 0.9;
-  margin-bottom: 3rem;
+
 }
 
 /* CTA */
 .agency-hero__cta {
-  display: inline-block;
+    font-family: var(--font-title);
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+  display: block;
+    width: fit-content;
   padding: 0.85rem 1.8rem;
-  margin: 2rem 0;
-  background: #76f18b;
+  margin: 2rem auto 0 auto;
+  background: #3dd680;
   color: #222;
   border-radius: 8px;
   font-weight: 600;
@@ -198,8 +211,8 @@ body {
 
 .whatsapp-icon {
     margin: 10px;
-    vertical-align: middle;
     color: #222;
+    vertical-align: middle;
     transform: scale(1.5);
 }
 
