@@ -259,7 +259,7 @@ body {
     font-size: 0.95rem;
     margin-left: auto !important;
     margin-right: auto !important;
-    display: block;
+    display: inline-block;
   }
   
   .agency-hero__title,
