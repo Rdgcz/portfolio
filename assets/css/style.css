@@ -118,7 +118,7 @@ body {
 .agency-hero {
   position: relative;
   width: 100%;
-  padding: clamp(3rem, 8vw, 5rem) 0;
+  padding: clamp(1.6rem, 6vw, 3.4rem) 0;
   background: url('../img/hero-bg.webp') center/cover no-repeat;
   color: #fff;
   overflow: hidden;
