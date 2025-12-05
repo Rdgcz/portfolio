@@ -407,14 +407,15 @@ h2 {
     font-family: var(--font-title);
     font-size: 1rem;
     font-weight: 600;
+    letter-spacing: -0.2px;
     color: #111;
-    opacity: 0.85;
+    opacity: 0.92;
     transition: opacity .25s ease, transform .25s ease;
 }
 
 .project-card:hover .project-card__cta {
     opacity: 1;
-    transform: translateX(3px);
+    transform: translateX(4px);
 }
 
 @media (max-width: 768px) {
