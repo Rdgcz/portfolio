@@ -480,35 +480,49 @@ h2 {
     color: #333;
 }
 
-.about__cta {
+.about__p {
     font-family: var(--font-body);
     font-size: 1.1rem;
     opacity: 0.9;
      ;
 }
 
-.about__cta:hover {
-    opacity: 1;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-
 /* -----------------------------------------------------
    CTA FINAL (INDEX)
 ------------------------------------------------------ */
-section.cta {
+.portfolio-final-cta {
     text-align: center;
+    margin: 5rem 0 7rem;
 }
 
-section.cta h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.final-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25d366;
+    color: #fff;
+    padding: 1rem 2.2rem;
+    border-radius: 12px;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 6px 22px rgba(37, 211, 102, 0.35);
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
-section.cta p {
-    margin-bottom: 20px;
+.final-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 32px rgba(37, 211, 102, 0.55);
 }
+
+.cta-whatsapp-icon {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
+
 
 /* -----------------------------------------------------
    FOOTER (INDEX)
