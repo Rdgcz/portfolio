@@ -455,15 +455,15 @@ h2 {
     font-family: var(--font-body);
     font-size: 1.2rem;
     opacity: 0.9;
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.5rem;
 }
 
 .about__text {
     font-family: var(--font-body);
     font-size: 1.1rem;
-    line-height: 1.65;
+    line-height: 1.7;
     margin-bottom: 2.4rem;
-    color: #444;
+    color: #333;
 }
 
 .about__principles {
@@ -475,7 +475,9 @@ h2 {
 
 .about__principles li {
     margin-bottom: 1rem;
+    margin-left: 0.5rem;
     font-size: 1.05rem;
+    color: #333;
 }
 
 .about__cta {
