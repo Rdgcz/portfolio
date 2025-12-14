@@ -1,0 +1,226 @@
+/* ==============================
+   RESET BÁSICO
+================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #0f0f0f;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* ==============================
+   VARIÁVEIS
+================================ */
+:root {
+  --bg-main: #0f0f0f;
+  --bg-section: #151515;
+  --bg-soft: #1b1b1b;
+
+  --text-main: #eaeaea;
+  --text-muted: #a0a0a0;
+
+  --accent: #c2a25d; /* dourado discreto */
+  --accent-hover: #d6b873;
+
+  --max-width: 1100px;
+}
+
+/* ==============================
+   CONTAINER
+================================ */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==============================
+   HEADER
+================================ */
+.case__header {
+  background: var(--bg-main);
+  border-bottom: 1px solid #222;
+}
+
+.case__back {
+  display: inline-block;
+  padding: 1.2rem 0;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.case__back:hover {
+  color: var(--accent);
+}
+
+/* ==============================
+   HERO
+================================ */
+.case__hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
+    url("../img/cases/sitio/case-hero-21x9.webp") center / cover no-repeat;
+}
+
+.case__hero-overlay {
+  display: none;
+}
+
+.case__hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.case__hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.case__title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin: 0 0 1rem 0;
+  line-height: 1.15;
+}
+
+.case__hero-subtitle {
+  max-width: 640px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* ==============================
+   BOTÕES
+================================ */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #111;
+}
+
+.btn--primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+/* ==============================
+   SEÇÕES
+================================ */
+.case__section {
+  padding: 4.5rem 0;
+  background: var(--bg-section);
+}
+
+.case__section:nth-of-type(even) {
+  background: var(--bg-soft);
+}
+
+.case__section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.case__section p {
+  max-width: 720px;
+  color: var(--text-muted);
+}
+
+/* ==============================
+   LISTAS
+================================ */
+.case__list {
+  margin: 1.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.case__list li {
+  margin-bottom: 0.6rem;
+  color: var(--text-muted);
+}
+
+/* ==============================
+   NOTAS
+================================ */
+.case__note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  opacity: 0.85;
+}
+
+/* ==============================
+   CTA FINAL
+================================ */
+.case__cta-final {
+  margin-top: 2rem;
+}
+
+/* ==============================
+   FOOTER
+================================ */
+.case__footer {
+  background: var(--bg-main);
+  border-top: 1px solid #222;
+}
+
+.case__footer p {
+  margin: 0;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ==============================
+   RESPONSIVO
+================================ */
+@media (max-width: 768px) {
+  .case__hero {
+    min-height: 60vh;
+  }
+
+  .case__hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .case__section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .case__title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .case__hero-subtitle {
+    font-size: 0.95rem;
+  }
+}
